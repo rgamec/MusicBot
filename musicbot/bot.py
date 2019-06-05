@@ -2217,6 +2217,7 @@ class MusicBot(discord.Client):
             else:
                 raise exceptions.CommandError(self.str.get('cmd-option-invalid-param' ,'The parameters provided were invalid.'))
 
+    @owner_only
     async def cmd_queue(self, channel, player):
         """
         Usage:
